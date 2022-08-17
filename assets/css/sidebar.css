@@ -1,8 +1,8 @@
-.sidebar {   
+.sidebar {
     position: absolute;
     background-color: white;
     height: 90%;
-    width: 250px;   
+    width: 250px;
     z-index: 999;
 }
 
@@ -14,24 +14,29 @@
     padding-right: 0;
 }
 
-.sidebar a, .sidebar ul li  {
+.sidebar a,
+.sidebar ul li {
     text-decoration: none;
     list-style: none;
     color: black;
 }
 
-.sidebar > .title {
+.sidebar>.title {
     text-align: center;
     padding: 15px 25px 15px 15px;
     background-color: brown;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
-.sidebar > .title a {
+.sidebar>.title a {
     color: #FFFFFF;
 }
 
-.sidebar > .title a:last-child {
+.sidebar .icon-menu{
+    position: absolute;
+    left: 15px;
+}
+.sidebar>.title a:last-child {
     position: absolute;
     right: 10px;
 }
@@ -41,13 +46,14 @@
 }
 
 .sidebar ul li {
-    padding: 20px 15px 20px 15px;
+    padding: 20px 15px 10px 15px;
     text-align: left;
 }
 
 .sidebar ul li:hover {
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
+    margin-left: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
     background: deepskyblue;
 }
 
@@ -56,8 +62,8 @@
 }
 
 .sidebar ul li:active {
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
     background-color: deepskyblue;
 }
 
@@ -75,4 +81,11 @@
 .sidebar .footer:hover {
     color: #FFFFFF;
     background-color: cadetblue;
+}
+
+.msg {
+    background-color: red;
+    font-size: 14px;
+    padding: 2px 10px;
+    border-radius: 4px;
 }

@@ -1,8 +1,8 @@
 .header {
     position: absolute;
     top: -1px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 10px;
+    padding-bottom: 11px;
     width: 100%;
     background-color: brown;
     display: flex;
