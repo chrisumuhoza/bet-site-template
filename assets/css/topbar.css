@@ -26,3 +26,7 @@
 .header .user span {
     color: white;
 }
+footer .copyright{
+    position: relative;
+    top: 3px;
+}
