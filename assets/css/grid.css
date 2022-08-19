@@ -13,10 +13,7 @@
 }
 
 
-.recent-updates {
-    background-color: blue;
-    color: white;
-}
+
 .scroll{
     background-color: red;
     background-size: 200px;
@@ -104,3 +101,130 @@
 }
 
             /*------END OF SPORTS-------*/
+        
+            /*Beginning of Recent updates*/
+.recent-updates {
+    background-color: white;
+    color: black;
+}
+        
+        /*slider creation*/
+
+.slider-container{
+    max-width: 450px;
+    height: 90%;
+    position: relative;
+    margin: auto;
+
+}
+
+.slider{
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior:auto;
+    scrollbar-arrow-color: blue;
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 20px 0px;
+    
+}
+
+.slider::-webkit-scrollbar{
+    height: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: blue;
+}
+
+.slider::-webkit-scrollbar-track{
+    border-radius: 100px;
+    background-color: gray;
+}
+
+
+.slide{
+    border: 3px solid purple ;
+    height: 100%;
+    scroll-snap-align: start;
+    transition: all .3s;
+       
+}
+/*end of Slider*/
+
+/*content of slider*/
+
+.league{
+    font-size: large;
+    font-weight: bold;
+    color: gray;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.icon-sport{
+    padding: 0;
+}
+.match{
+    font-size: large;
+    font-weight: bold;
+    color: gray;
+    padding-left: 20px;
+    padding-bottom: 2px;
+}
+.match-conditions{
+    inline-size: 100%;
+    white-space: nowrap;
+    padding-left: 5px;
+    overflow-x: scroll;  
+    overflow-y: hidden; 
+}
+.match-conditions::-webkit-scrollbar{
+    height: 3px;
+}
+
+.match-conditions::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: blue;
+}
+
+.match-conditions::-webkit-scrollbar-track{
+    border-radius: 100px;
+    background-color: gray;
+}
+
+.time-left{
+    position: relative;
+    bottom: -65px;
+    right: -250px;
+}
+div .table table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-left: 30%;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+}
+td{border: 1px solid black; padding: 5px 10px;}
+
+tr:nth-child(even) td{
+    background-color: blue;
+}
+
+tr:nth-child(odd) td{
+    background-color: red;
+}
+
+/*end of slider content*/
+      
+     
