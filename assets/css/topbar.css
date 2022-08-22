@@ -30,3 +30,7 @@ footer .copyright{
     position: relative;
     top: 3px;
 }
+.user-image{
+    width: 24px;
+    height: 24px;
+}

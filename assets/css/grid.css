@@ -29,13 +29,14 @@
 .events {
     background-color: yellow;
     color: white;
+    padding: 15px 25px 15px 15px;
 }
 
                             /*------SCORES-------*/
 .scores {
     background-color: white;
     color: black;
-    padding: 15px 25px 15px 15px;;
+    padding: 15px 25px 15px 15px;
 }
 
 .matches{
@@ -69,40 +70,69 @@
 
 
 .sports {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
-.TOP{
-    padding-bottom: 10px;
+.top{
     border-bottom: 1px solid blue;
 }
 .grid-boxes{
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    height: 80%;
+    grid-template-columns: repeat(6, 1fr) ;
+    max-width: 450px;
+    height: 90%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior:auto;
+    scrollbar-arrow-color: blue;
+    grid-column-gap: 20px;
 }
+
+.grid-boxes::-webkit-scrollbar{
+    height: 10px;
+}
+
+.grid-boxes::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: blue;
+}
+
+.grid-boxes::-webkit-scrollbar-track{
+    border-radius: 100px;
+    background-color: gray;
+}
+
+
 .box{
     background-color: grey;
-    margin-top: 7px;
+    margin-top: 5px;
     margin-bottom: 5px;
-    border-radius: 15px;
+    border-radius: 12px;
     padding-top: 5px;
-    width: 90%;
-    box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
-   
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18); 
+    transition: all .5s ease; 
 }
+
 
 .box:hover{
     box-shadow: none;
+    background-color: cadetblue;
 }
-.one{
+.box{
    margin-left: 5px;
    padding-left: 2px;
 }
 
             /*------END OF SPORTS-------*/
+
+
         
             /*Beginning of Recent updates*/
+
+
 .recent-updates {
     background-color: white;
     color: black;
