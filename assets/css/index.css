@@ -46,6 +46,8 @@ footer {
 }
 
 img{
+    position: relative;
+    bottom: -3px;
     border-radius: 50%;
     height: 20px;
     width: 20px;
@@ -53,9 +55,10 @@ img{
    
 }
 .icon{
+    position: relative;
+    bottom: -3px;
     font-size: 1rem;
-    height: 5px;
-  
+    height: 5px; 
 }
 
 a{
@@ -68,4 +71,9 @@ li{
     margin: 0;
     padding: 10px;
     border-bottom: 0.5px solid gray;
+}
+
+.dark-theme-variable{
+    background-color: #181a1e;
+    color: #202528
 }

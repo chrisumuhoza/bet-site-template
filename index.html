@@ -28,7 +28,7 @@
         </div>
 
 
-        <ul>
+        <ul class="aside">
 
             <li>
                 <a href="#">
@@ -39,7 +39,7 @@
 
             <li>
                 <a href="#">
-                    <span class="icon">a</span>
+                    <span class="icon"><ion-icon name="contract-outline"></ion-icon></span>
                     <span> Actions</span>
                 </a>
             </li>
@@ -107,6 +107,8 @@
 
     <div class="header">
 
+        Search event by date: <div class="calendar"><form action="" title="calendar search"><input type="date" placeholder="#"></form></div>
+
         <div class="user">
         <a href=""><abbr title="add an image">
             <img class="user-image" src="assets/images/user.png" alt="user image" width="24" height="24"/>
@@ -114,6 +116,8 @@
         </a>
             <span>John Doe</span>
         </div>
+
+       
 
     </div>
 
@@ -134,7 +138,7 @@
                <div class="slider-container">
                   <div class="slider">
                      <div class="slide">
-                        <span class="icon-sport"><ion-icon name="football-outline"></ion-icon></span> <div class="league"><img src="assets/images/olympique-de-marseille-logo-vector.png" alt="olympique-de-marseille-logo-vector" > <span>Ligue 1 Uber eats Francaise </span></div>
+                        <span class="icon-sport"><ion-icon name="football-outline"></ion-icon></span> <div class="league"><span><img src="assets/images/olympique-de-marseille-logo-vector.png" alt="olympique-de-marseille-logo-vector"></span> <span>Ligue 1 Uber eats Francaise </span></div>
                         <div class="match"> <span class="icon"><img src="assets/images/olympique-de-marseille-logo-vector.png" alt="olympique-de-marseille-logo-vector"></span> <span>Marseille</span> - <span class="icon"><img src="assets/images/olympique_lyonnais-logo_brandlogos.net_kptnp.png" alt="olympique_lyonnais-logo_brandlogos"></span> <span>Lyon</span></div>
                         <div class="match-conditions"> 26-08-2022, start: 8:00 P.M, 25°c cloudy, Orange velodrome stadium, Marseille, Round 2 </div>
                         <div class="time-left">Time left: 2hrs before match</div>
@@ -232,7 +236,7 @@
               <div class="latest">
                   <details>
                       <summary>
-                          <span class="icon"><img src="assets/images/flag-of-spain-vector-logo.png" alt="flag-of-spain-vector-logo" height="15px" width="15px"></span>
+                          <span class="country-icon"><img src="assets/images/flag-of-spain-vector-logo.png" alt="flag-of-spain-vector-logo" height="15px" width="15px"></span>
                           <a title="La liga link"href="#"><span class="title"> Spain (La Liga Santander) </span>
                       </summary>
                       
@@ -245,7 +249,7 @@
 
                   <details>
                       <summary>
-                           <span class="icon"><img src="assets/images/england flag.png" alt="flag-of-england-vector-logo" height="15px" width="15px"></span>
+                           <span class="country icon"></span>
                            <a title="Premier league link" href="#"><span class="title">England (Premier League) </span>
                       </summary>
                        
@@ -257,7 +261,7 @@
 
                   <details>
                       <summary>
-                          <span class="icon"><img src="assets/images/flag-of-italy-vector-logo.png" alt="flag-of-italy-vector-logo"></span>
+                          <span class="country icon"><img src="assets/images/flag-of-italy-vector-logo.png" alt="flag-of-italy-vector-logo"></span>
                           <a title="Seria A link" href="#"><span class="title"> Italy (Serie A)</span>
                       </summary>
                        
@@ -270,7 +274,7 @@
 
                   <details>
                       <summary>
-                          <span class="icon">x</span>
+                          <span class="country icon">x</span>
                          <a title="Serie A link" href="#"> <span class="title"> Italy (Serie A)</span>
                       </summary>
                        
@@ -283,7 +287,7 @@
 
                   <details>
                       <summary>
-                          <span class="icon">x</span>
+                          <span class="country icon">x</span>
                           <a title="Serie A link" href="#"><span class="title"> Italy (Serie A)</span>
                       </summary>
                        
@@ -296,7 +300,7 @@
 
                   <details>
                       <summary>
-                          <span class="icon">x</span>
+                          <span class="country icon">x</span>
                           <span class="title"> Italy (Serie A)</span>
                       </summary>
                        
@@ -327,23 +331,20 @@
             <div class="grid-boxes">
                 <div class="box one">
                     <div>
-                        <span class="icon"><ion-icon name="football-outline"></ion-icon></span>
+                        
                         
                     </div>
 
                     <div class="competition">
                         <span class="icon"><img src="assets/images/uefa-champions-league--eps--vector-logo.png" alt="uefa-champions-league--eps--vector-logo"></span>
-                        <span>UEFA CHAMPIONS LEAGUE</span>
+                        <span class="competition">UEFA CHAMPIONS LEAGUE</span>
                     </div>
 
-                    <div class="tournament-round">Semi-finals</div>
-                        <div class="date">FROM 20 FEBRUARY 2022</div>
-                </div>
-                    <div class="box two">
-                        <div>
-                        <span class="icon"><ion-icon name="football-outline"></ion-icon></span>
-                        
+                        <div class="tournament-round">Semi-finals</div>
+                        <div class="tournament-dates">From 20/08 to 20/09/2022</div>
+                        <div class="info"><a href="#">Learn More</a></div>
                     </div>
+                    <div class="box two">
 
                     <div class="competition">
                         <span class="icon">x</span>
@@ -351,12 +352,9 @@
                     </div>
 
                     <div class="tournament-round">Semi-finals</div>
-                        <div class="date">FROM 20 FEBRUARY 2022</div></div>
+                    <div class="tournament-dates">From 20/08 to 20/09/2022</div>
+                        <div class="date"><a href="#">Learn More</a></div></div>
                     <div class="box three">
-                        <div>
-                            <span class="icon"><ion-icon name="football-outline"></ion-icon></span>
-                            
-                        </div>
     
                         <div class="competition">
                             <span class="icon">x</span>
@@ -364,13 +362,10 @@
                         </div>
     
                         <div class="tournament-round">Semi-finals</div>
-                            <div class="date">FROM 20 FEBRUARY 2022</div>
+                        <div class="tournament-dates">From 20/08 to 20/09/2022</div>
+                            <div class="date"><a href="#">Learn More</a></div>
                     </div>
                     <div class="box three">
-                        <div>
-                            <span class="icon"><ion-icon name="football-outline"></ion-icon></span>
-                            
-                        </div>
     
                         <div class="competition">
                             <span class="icon"></span>
@@ -378,13 +373,10 @@
                         </div>
     
                         <div class="tournament-round">Semi-finals</div>
-                            <div class="date">FROM 20 FEBRUARY 2022</div>
+                        <div class="tournament-dates">From 20/08 to 20/09/2022</div>
+                            <div class="date"><a href="#">Learn More</a></div>
                     </div>
-                    <div class="box three">
-                        <div>
-                            <span class="icon"><ion-icon name="football-outline"></ion-icon></span>
-                            
-                        </div>
+                    <div class="box four">
     
                         <div class="competition">
                             <span class="icon">x</span>
@@ -392,13 +384,10 @@
                         </div>
     
                         <div class="tournament-round">Semi-finals</div>
-                            <div class="date">FROM 20 FEBRUARY 2022</div>
+                        <div class="tournament-dates">From 20/08 to 20/09/2022</div>
+                            <div class="date"><a href="#">Learn More</a></div>
                     </div>
-                    <div class="box three">
-                        <div>
-                            <span class="icon"><ion-icon name="football-outline"></ion-icon></span>
-                            
-                        </div>
+                    <div class="box five">
     
                         <div class="competition">
                             <span class="icon">x</span>
@@ -406,7 +395,8 @@
                         </div>
     
                         <div class="tournament-round">Semi-finals</div>
-                            <div class="date">FROM 20 FEBRUARY 2022</div>
+                        <div class="tournament-dates">From 20/08 to 20/09/2022</div>
+                            <div class="date"><a href="#">Learn More</a></div>
                     </div>
             </div>
          </div>
@@ -424,7 +414,7 @@
                     <div class="latest">
                         <details>
                             <summary>
-                                <span class="icon"><img src="assets/images/flag-of-spain-vector-logo.png" alt="flag-of-spain-vector-logo" height="15px" width="15px"></span>
+                                <span class="country icon"></span>
                                 <a title="La liga link"href="#"><span class="title"> Spain (La Liga Santander) </span>
                             </summary>
                             
@@ -437,7 +427,7 @@
 
                         <details>
                             <summary>
-                                 <span class="icon"><img src="assets/images/england flag.png" alt="flag-of-england-vector-logo" height="15px" width="15px"></span>
+                                 <span class="country icon"></span>
                                  <a title="Premier league link" href="#"><span class="title">England (Premier League) </span>
                             </summary>
                              
@@ -449,7 +439,7 @@
 
                         <details>
                             <summary>
-                                <span class="icon"><img src="assets/images/flag-of-italy-vector-logo.png" alt="flag-of-italy-vector-logo"></span>
+                                <span class="country icon"></span>
                                 <a title="Seria A link" href="#"><span class="title"> Italy (Serie A)</span>
                             </summary>
                              
@@ -462,7 +452,7 @@
 
                         <details>
                             <summary>
-                                <span class="icon">x</span>
+                                <span class="country icon">x</span>
                                <a title="Serie A link" href="#"> <span class="title"> Italy (Serie A)</span>
                             </summary>
                              
@@ -475,7 +465,7 @@
 
                         <details>
                             <summary>
-                                <span class="icon">x</span>
+                                <span class="country icon">x</span>
                                 <a title="Serie A link" href="#"><span class="title"> Italy (Serie A)</span>
                             </summary>
                              
@@ -488,7 +478,7 @@
 
                         <details>
                             <summary>
-                                <span class="icon">x</span>
+                                <span class="country icon">x</span>
                                 <span class="title"> Italy (Serie A)</span>
                             </summary>
                              
@@ -515,7 +505,7 @@
 
     <footer>
         <span class="copyright"><img src="assets/images/copyright.png" alt="copyright image" width="20" height="19"></span> <span>Copyright 2022</span>  
-            <span><a href="#">Terms and Conditions</a></span> 
+            <span><a href="#">Terms and Conditions</a></span>           <span class="theme-toggler"><button class="lightmode" type="button" title="light theme"><ion-icon name="sunny-outline"></ion-icon></button> <button class="darkmode" type="button" title="dark theme"><ion-icon name="moon-outline"></ion-icon></button></span> 
     </footer>
 
     <!-- END FOOTER -->
