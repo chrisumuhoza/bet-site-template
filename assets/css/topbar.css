@@ -1,8 +1,8 @@
 .header {
     position: absolute;
     top: -1px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 10px;
+    padding-bottom: 11px;
     width: 100%;
     background-color: brown;
     display: flex;
@@ -25,4 +25,57 @@
 
 .header .user span {
     color: white;
+}
+
+.user-image{
+    width: 24px;
+    height: 24px;
+}
+.calendar{
+    background-color: rgba(132, 139, 200, 0.18);
+    border-radius: 0.4rem;
+
+}
+input[type='date']{ 
+    border-radius: 0.4rem;
+    color:#363949;
+    width: 100%;
+}
+
+        /*footer*/
+
+footer .copyright{
+    position: relative;
+    top: 3px;
+}
+
+
+button{
+    cursor: pointer;
+    
+}
+.lightmode{
+    background-color: #7380ec;
+    color:#fff;
+    border-radius: 0.4rem;
+    transition: all 0.4s ;
+    border: 1px solid #7380ec;
+}
+.darkmode{
+    
+    background-color: #f6f6f9;
+    color:black;
+    border-radius: 0.4rem; 
+    border: 1px solid #f6f6f9;
+    transition: all 0.4s ;   
+}
+
+.lightmode:hover{
+    background-color:  darkgray;
+    color:black;
+}
+
+.darkmode:hover{
+    background-color: #677483;
+    color:#fff;
 }
