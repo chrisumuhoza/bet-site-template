@@ -4,7 +4,7 @@
     padding-top: 10px;
     padding-bottom: 11px;
     width: 100%;
-    background-color: brown;
+    background-color: var(--color-serenity);
     display: flex;
     justify-content: end;
     align-items: center;
@@ -54,28 +54,26 @@ button{
     cursor: pointer;
     
 }
-.lightmode{
-    background-color: #7380ec;
-    color:#fff;
-    border-radius: 0.4rem;
-    transition: all 0.4s ;
-    border: 1px solid #7380ec;
-}
-.darkmode{
-    
+
+.theme-toggler:before{
+    cursor: pointer;
+    content: '\f186';
+    font-family: fontAwesome;
     background-color: #f6f6f9;
     color:black;
-    border-radius: 0.4rem; 
+    border-radius: 0.5rem; 
     border: 1px solid #f6f6f9;
+    padding: 3px 8px;
     transition: all 0.4s ;   
 }
 
-.lightmode:hover{
-    background-color:  darkgray;
-    color:black;
+.theme-toggler:hover{
+    background-color: #363949;
+    color: white;}
+
+body.active .theme-toggler:before{
+    content: '\f185';
+    font-family: fontAwesome;
+
 }
 
-.darkmode:hover{
-    background-color: #677483;
-    color:#fff;
-}

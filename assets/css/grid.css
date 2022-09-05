@@ -24,13 +24,13 @@
 
 
 .odds{
-    background-color: green;
+    background-color: var(--color-riches);
     display: flex;
 }
 
 .events {
-    background-color: yellow;
-    color: white;
+    background-color: white;
+    border-radius: 20px;
     padding: 0px 25px 15px 15px;
 }
 span.country-icon{
@@ -41,7 +41,30 @@ span.country-icon{
 .scores {
     background-color: white;
     color: black;
+    border-radius: 20px;
     padding: 0px 25px 15px 15px;
+}
+
+.latest{ 
+    max-height: 160px;
+    scroll-snap-type: x mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.latest::-webkit-scrollbar{
+    height: 8px;
+    width: 6px;
+}
+
+.latest::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: var(--color-serenity);
+}
+
+.latest::-webkit-scrollbar-track{
+    border-radius: 100px;
+    background-color: white;
 }
 
 .matches{
@@ -77,6 +100,7 @@ span.country-icon{
 
 .sports {
     background-color: white;
+    border-radius: 20px;
     color: black;
 }
 .top{
@@ -85,7 +109,7 @@ span.country-icon{
 .grid-boxes{
     display: grid;
     grid-template-columns: repeat(6, 1fr) ;
-    max-width: 450px;
+    max-width: 500px;
     height: 90%;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -97,11 +121,12 @@ span.country-icon{
 
 .grid-boxes::-webkit-scrollbar{
     height: 10px;
+    padding-left: 20px;
 }
 
 .grid-boxes::-webkit-scrollbar-thumb{
     border-radius: 100px;
-    background-color: blue;
+    background-color: var(--color-serenity);
 }
 
 .grid-boxes::-webkit-scrollbar-track{
@@ -125,12 +150,13 @@ span.country-icon{
 
 .box:hover{
     box-shadow: none;
-    background-color: cadetblue;
+    background-color: var(--color-confidence);
 }
 
 .box{
    margin-left: 5px;
    padding-left: 2px;
+   padding-bottom: 20px;
 }
 .icon-sport{
     position: absolute;
@@ -151,6 +177,9 @@ span.country-icon{
     font-size: 14px;
     padding-bottom: 15px;
 }
+.info{
+    text-decoration: underline;
+}
 
             /*------END OF SPORTS-------*/
 
@@ -161,6 +190,7 @@ span.country-icon{
 
 .recent-updates {
     background-color: white;
+    border-radius: 20px;
     color: black;
 }
         
@@ -180,7 +210,7 @@ span.country-icon{
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     
-    scrollbar-arrow-color: blue;
+    scrollbar-arrow-color: var(--color-serenity);
     display: grid;
     grid-auto-columns: 100%;
     grid-auto-flow: column;
@@ -199,7 +229,7 @@ span.country-icon{
 
 .slider::-webkit-scrollbar-thumb{
     border-radius: 100px;
-    background-color: blue;
+    background-color: var(--color-serenity);
 }
 
 .slider::-webkit-scrollbar-track{
@@ -209,7 +239,7 @@ span.country-icon{
 
 
 .slide{
-    border: 3px solid purple ;
+    border: 3px solid var(--color-serenity) ;
     height: 100%;
     scroll-snap-align: start;
     transition: all .3s;
@@ -278,11 +308,11 @@ div .table table{
 td{border: 1px solid black; padding: 5px 10px;}
 
 tr:nth-child(even) td{
-    background-color: blue;
+    background-color: var(--color-peps);
 }
 
 tr:nth-child(odd) td{
-    background-color: red;
+    background-color: var(--color-confidence);
 }
 
 /*end of slider content*/

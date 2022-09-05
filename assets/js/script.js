@@ -1,20 +1,17 @@
-const sideMenu = document.querySelector(".aside");
-const menuBtn = document.querySelector(".icon-menu");
-const closeBtn = document.querySelector(".close-btn");
-const themeToggler = document.querySelector(".theme-toggler");
+let btn = document.querySelector(".icon-menu");
+let sidebar = document.querySelector(".sidebar");
+let icon = document.querySelector(".icon");
+let themechange = document.querySelector(".theme-toggler");
+let body = document.querySelector("body");
+let content = document.querySelector(".content");
+btn.onclick = function(){
+    sidebar.classList.toggle("active");
 
-menuBtn .addEventListener('click' , () => {
-    sideMenu.style.display = 'block';
+    content.classList.toggle("active");
 
-})
+}
 
+themechange.onclick = function(){
+    body.classList.toggle("active");
 
-closeBtn.addEventListener('click' , () =>{
-    sideMenu.style.display = 'none';
-
-})
-
-themeToggler.addEventListener('click' , () =>{
-    document.body.classList.toggle('');
-
-})
+}
