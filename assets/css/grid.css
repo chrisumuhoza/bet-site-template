@@ -12,6 +12,29 @@
     border-radius: 20px;
 }
 
+body.active div.recent-updates{
+    background-color: #363949;
+    color: white;
+    transition:  all 0.5s ease;
+}
+
+body.active div.events{
+    background-color: #363949;
+    color: white;
+    transition:  all 0.5s ease;
+}
+
+body.active div.sports{
+    background-color: #363949;
+    color: white;
+    transition:  all 0.5s ease;
+}
+
+body.active div.scores{
+    background-color: #363949;
+    color: white;
+    transition:  all 0.5s ease;
+}
 
 
 .scroll{
@@ -109,7 +132,7 @@ span.country-icon{
 .grid-boxes{
     display: grid;
     grid-template-columns: repeat(6, 1fr) ;
-    max-width: 500px;
+    max-width: 450px;
     height: 90%;
     overflow-x: scroll;
     overflow-y: hidden;

@@ -2,8 +2,8 @@
     position: absolute;
     background-color: white;
     white-space: nowrap;
-    height: 90%;
-    width: 250px;
+    height: 80%;
+    width: 200px;
     z-index: 999;
     transition: all 0.5s ease;
 }
@@ -93,7 +93,6 @@ body.active div.sidebar.active{background-color: #363949; color: white; transiti
     background-color: var(--color-serenity);
     border: 1px var(--color-serenity);
 }
-
 
 .sidebar.active .icon-menu {
     left: -25px;

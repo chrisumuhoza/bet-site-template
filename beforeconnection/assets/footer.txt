@@ -1,0 +1,50 @@
+ <div class="box7">
+          <div class="list">
+           <ul>
+            <li>
+              <a class="nav end" href="#">
+              <span class="text">Terms and Conditions</span>
+             </a>
+            </li>
+    
+            <li>
+              <a class="nav end" href="#">
+              <span class="text">Where to find us</span>
+             </a>
+            </li>
+
+            <li>
+              <a class="nav end" href="#">
+              <span class="icons">b</span>
+              <span class="icons">b</span>
+              <span class="icons">b</span>
+             </a>
+            </li>
+            <li>
+              <a class="nav end" href="#">
+              <span class="text">Sport Partners</span>
+             </a>
+            </li>
+            <li>
+              <a class="nav end" href="#">
+              <span class="icons">d</span>
+              <span class="icons">d</span>
+             </a>
+            </li>
+           </ul>
+           <p>1XMOUF is owned and control by Mouk S.A. Betting is strictly Forbidden on this site if you are aged under 21</p><br>
+           <p><div class="program">Affiliation Program</div> 1XMOUF makes use of cookies to offer you, a better service during your navigation on the site. By continuing your navigation on this site, you accept the utilistion of cookies. <a  class="nav end" href="#"> Learn more</a> </p><br>
+            
+
+          </div>
+        
+        <div class="toggle">
+          <a href="#">
+           <span class="icons">X</span>
+          </a>
+        </div>
+
+    </div>
+
+ <span>Search event by date:</span>   <a href="#"><div class="calendar"><form action="" title="calendar search"><input type="date" placeholder="#"></form></a></div>
+

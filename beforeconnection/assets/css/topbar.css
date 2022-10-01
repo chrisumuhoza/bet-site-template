@@ -8,7 +8,6 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    transition: all 0.5s ease;
 }
 
 .header .user {
@@ -26,25 +25,6 @@
 
 .header .user span {
     color: white;
-}
-
-.header .invisible-brand-name{
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    left: 300px;
-    bottom: 0px;
-    padding-bottom: 8px;
-    font-size: 1.2rem;
-    background-color: var(--color-serenity);
-    border: 1px var(--color-serenity);
-
-}
-
-.header.active .invisible-brand-name{
-    opacity: 1;
-    left: 60px;
-    border: 1px var(--color-serenity);
 }
 
 .user-image{
@@ -97,4 +77,3 @@ body.active .theme-toggler:before{
     color: white;
 
 }
-

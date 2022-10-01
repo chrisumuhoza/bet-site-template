@@ -16,14 +16,14 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     overflow-x: hidden;
     background-color: var(--color-peps);
     font-family: "poppins, Arial, serif ";
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 body.active{background-color: #121212;}
 
@@ -93,4 +93,305 @@ li{
 .dark-theme-variable{
     background-color: #181a1e;
     color: #202528
+}
+
+
+
+        /* ALL MEDIA QUERIES */
+
+
+        /*Extra large screens (large laptops and desktops)*/
+@media only screen and (min-width:1200px){}
+
+
+@media only screen and (min-width:992px) and (max-width:1199.98px) {
+
+body{
+    background-color: red;
+}
+
+/*======Recent updates======*/
+
+.recent-updates{
+    max-width: 420px;
+    min-width: 250px;
+}
+
+.content.active .recent-updates{ max-width: 550px;}
+
+.time-left{
+    position: relative;
+    top: 75px;
+    left: -195px;
+}
+
+div .table table{
+    display: flex;
+    position: relative;
+    left: -60px;
+    justify-content: start;
+    
+    
+}
+
+
+
+
+
+.sports{
+    max-width: 420px;
+    min-width: 250px;
+}
+
+.content.active .sports{ max-width: 550px;}
+
+}
+
+    @media only screen and (min-width:768px) and (max-width:991.98px){
+
+body{
+    background-color: brown;
+}
+    /*==========RECENT UPDATES========*/
+
+.recent-updates{
+    min-width: 200px;
+}
+
+.time-left{
+    position: relative;
+    top: 75px;
+    left: -195px;
+}
+
+div .table table{
+    display: flex;
+    position: relative;
+    left: -70px;
+    justify-content: start;   
+}
+
+        /*========Top sports========*/
+
+.sports{
+  
+    min-width: 200px;
+}
+
+
+
+
+
+
+
+            /*========Sidebar========*/
+
+
+.sidebar {
+    position: absolute;
+    background-color: red;
+    white-space: nowrap;
+    height: 50%;
+    width: 25px;
+    z-index: 999;
+    transition: all 0.5s ease;
+}
+            
+
+}
+
+@media only screen and (min-width:600px) and (max-width:767.98px){
+
+body{background-color: yellow;}
+
+.recent-updates{
+    min-width: 200px;
+}
+
+.sports{
+  
+    min-width: 200px;
+}
+
+}
+
+@media only screen and (max-width:600px){
+
+body{background-color: rebeccapurple;}
+
+.recent-updates{
+    min-width: 200px;
+}
+
+.sports{
+  
+    min-width: 200px;
+}
+
+.sidebar{max-width: 44px; transition: all 1s ease;}
+
+.sidebar.active{
+    min-width: 250px; 
+    transition: all 1s ease;
+
+}
+
+.sidebar .text{opacity: 0;}
+
+.sidebar .msg{opacity: 0;}
+
+.sidebar>ul li:hover{
+    background-color: white;
+    transition: all .2s ease;
+ }
+
+.sidebar>ul li .icon{
+    position: relative;
+    left: -15px;
+    border-radius: 0.2rem;
+    background-color: #222;
+    color: white;
+    padding: 3px 5px;
+ }
+
+ .sidebar>ul li .icon:hover{
+    background-color: white;
+    padding: 3px 5px;
+    color: black;
+    transition: all .2s ease;
+ }
+
+ .sidebar>.footer{
+    left: -10px;
+ }
+
+ .sidebar.active ul {
+    position: absolute;
+    right: -1px;
+    left: -1px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sidebar.active a,
+.sidebar.active ul li {
+    text-decoration: none;
+    opacity: 1;
+    list-style: none;
+    color: black;
+}
+
+.sidebar>ul li {
+    border-bottom: white;
+}
+
+.sidebar.active>.title {
+    text-align: center;
+    padding: 6px 15px;
+    background-color: var(--color-serenity);
+    margin-bottom: 1px;
+}
+
+.sidebar .brand-name {
+    opacity: 0;
+    
+}
+
+.sidebar.active>.title a {
+    color: #FFFFFF;
+}
+
+.sidebar.active .icon-menu{
+    position: absolute;
+    left: 15px;
+    top: -5px;
+    font-size: 1.2rem;
+    background-color: var(--color-serenity);
+    border: 1px var(--color-serenity);
+}
+
+.sidebar .icon-menu {
+    position: absolute;
+}
+
+
+.sidebar.active>.title a:last-child {
+    position: absolute;
+    right: 10px;
+}
+
+.sidebar.active ul {
+    padding-left: 10px;
+}
+
+.sidebar.active ul li {
+    padding: 20px 15px 10px 15px;
+    text-align: left;
+}
+
+.sidebar.active ul li:hover {
+    margin-left: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: var(--color-peps);
+}
+
+.sidebar>ul li:hover {
+    background-color: white;
+    margin-left: 0px;
+    margin-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.sidebar.active ul li:hover span {
+    color: #FFFFFF;
+}
+
+.sidebar.active ul li:active {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: deepskyblue;
+}
+
+.sidebar>.footer {
+   left: -10px;
+    
+}
+
+.sidebar.active .footer {
+    position: absolute;
+    padding: 10px 15px 10px 25px;
+    color: brown;
+    background-color: aquamarine;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+}
+
+.sidebar.active .footer:hover {
+    color: #FFFFFF;
+    background-color: cadetblue;
+}
+
+.content{
+    position: absolute;
+    top: 75px;
+    left: 280px;
+    right: 25px;
+    bottom: 75px;
+    transition: all 0.5s ease;
+}
+
+.content{
+    left: 60px;
+}
+
+.icon-menu{
+    left: -60px;
+}
+
+
+
+
 }

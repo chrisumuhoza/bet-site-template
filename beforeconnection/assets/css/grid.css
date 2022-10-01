@@ -1,0 +1,41 @@
+.content{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 , 1fr);
+    grid-auto-flow: row;
+    gap: 20px;
+    
+}
+
+/*second navbar*/
+.nav2{
+    position: relative;
+    right: -10px;
+    border: 2px solid red;
+    background-color: var(--color-serenity);
+    
+    
+}
+
+.selection{
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-around;
+    
+}
+
+.search-by-date{
+    justify-content: flex-end;
+}
+
+/*end of second navbar*/
+
+.advertissement{
+    border: 2px solid red;
+    
+}
+
+.table{
+    border: 2px solid red;
+}
