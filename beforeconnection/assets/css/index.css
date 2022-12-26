@@ -44,14 +44,24 @@ body.active{background-color: #121212;}
 
 a{
     text-decoration: none;
+    color: #121212;
 }
 
-img{
+.topbar>img{
     position: relative;
     bottom: -5px;
     border-radius: 50%;
     height: 20px;
     width: 20px;
+    background-color: var(--color-serenity);
+}
+footer>img{
+    position: relative;
+    bottom: -5px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-serenity);
 }
 
 ul{
