@@ -21,21 +21,50 @@
     height: fit-content;
     overflow-x: scroll;
 }
+
+
 .odds{
-    background-color: green;
+    background-color: var(--color-riches);
     display: flex;
 }
 
 .events {
-    background-color: yellow;
-    color: white;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0px 25px 15px 15px;
+}
+span.country-icon{
+    margin-top: 2px;
 }
 
                             /*------SCORES-------*/
 .scores {
     background-color: white;
     color: black;
-    padding: 15px 25px 15px 15px;;
+    border-radius: 20px;
+    padding: 0px 25px 15px 15px;
+}
+
+.latest{ 
+    max-height: 160px;
+    scroll-snap-type: x mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.latest::-webkit-scrollbar{
+    height: 8px;
+    width: 6px;
+}
+
+.latest::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: var(--color-serenity);
+}
+
+.latest::-webkit-scrollbar-track{
+    border-radius: 100px;
+    background-color: white;
 }
 
 .matches{
@@ -62,6 +91,7 @@
 }
 
 
+
            /*------END OF SCORES--------*/
            
            
@@ -69,42 +99,98 @@
 
 
 .sports {
-    background-color: black;
-    color: white;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
 }
-.TOP{
-    padding-bottom: 10px;
+.top{
     border-bottom: 1px solid blue;
 }
 .grid-boxes{
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    height: 80%;
+    grid-template-columns: repeat(6, 1fr) ;
+    max-width: 500px;
+    height: 90%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior:auto;
+    scrollbar-arrow-color: blue;
+    grid-column-gap: 20px;
 }
+
+.grid-boxes::-webkit-scrollbar{
+    height: 10px;
+    padding-left: 20px;
+}
+
+.grid-boxes::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: var(--color-serenity);
+}
+
+.grid-boxes::-webkit-scrollbar-track{
+    border-radius: 100px;
+    background-color: gray;
+}
+
+
 .box{
     background-color: grey;
-    margin-top: 7px;
+    margin-top: 5px;
     margin-bottom: 5px;
-    border-radius: 15px;
+    border-radius: 12px;
     padding-top: 5px;
-    width: 90%;
-    box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
-   
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18); 
+    transition: all .5s ease; 
 }
+
 
 .box:hover{
     box-shadow: none;
+    background-color: var(--color-confidence);
 }
-.one{
+
+.box{
    margin-left: 5px;
    padding-left: 2px;
+   padding-bottom: 20px;
+}
+.icon-sport{
+    position: absolute;
+    display: flex;
+    right: -1px;
+    margin-right: 5px;
+}
+
+.competition{
+    padding-bottom: 5px;
+}
+
+.tournament-round{
+    padding-bottom: 5px;
+}
+
+.tournament-dates{
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+.info{
+    text-decoration: underline;
 }
 
             /*------END OF SPORTS-------*/
+
+
         
             /*Beginning of Recent updates*/
+
+
 .recent-updates {
     background-color: white;
+    border-radius: 20px;
     color: black;
 }
         
@@ -123,8 +209,8 @@
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    scroll-behavior:auto;
-    scrollbar-arrow-color: blue;
+    
+    scrollbar-arrow-color: var(--color-serenity);
     display: grid;
     grid-auto-columns: 100%;
     grid-auto-flow: column;
@@ -143,7 +229,7 @@
 
 .slider::-webkit-scrollbar-thumb{
     border-radius: 100px;
-    background-color: blue;
+    background-color: var(--color-serenity);
 }
 
 .slider::-webkit-scrollbar-track{
@@ -153,7 +239,7 @@
 
 
 .slide{
-    border: 3px solid purple ;
+    border: 3px solid var(--color-serenity) ;
     height: 100%;
     scroll-snap-align: start;
     transition: all .3s;
@@ -164,7 +250,7 @@
 /*content of slider*/
 
 .league{
-    font-size: large;
+    font-size: larger;
     font-weight: bold;
     color: gray;
     padding-left: 10px;
@@ -175,7 +261,7 @@
     padding: 0;
 }
 .match{
-    font-size: large;
+    font-size:large;
     font-weight: bold;
     color: gray;
     padding-left: 20px;
@@ -183,10 +269,12 @@
 }
 .match-conditions{
     inline-size: 100%;
+    font-size: smaller;
     white-space: nowrap;
     padding-left: 5px;
     overflow-x: scroll;  
     overflow-y: hidden; 
+    color: #363949;
 }
 .match-conditions::-webkit-scrollbar{
     height: 3px;
@@ -206,6 +294,8 @@
     position: relative;
     bottom: -65px;
     right: -250px;
+    font-size: medium;
+    color: #7d8da1;
 }
 div .table table{
     border-collapse: collapse;
@@ -218,11 +308,11 @@ div .table table{
 td{border: 1px solid black; padding: 5px 10px;}
 
 tr:nth-child(even) td{
-    background-color: blue;
+    background-color: var(--color-peps);
 }
 
 tr:nth-child(odd) td{
-    background-color: red;
+    background-color: var(--color-confidence);
 }
 
 /*end of slider content*/
